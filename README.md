@@ -52,6 +52,9 @@ Data input plugin -> Referencing plugin (optional) -> Phase Calculator -> Crossi
   - Output the event outside of the Open Ephys environment
   - Must be in json + header mode
 
+
+See example signal chain config file that can be loaded into Open Ephys (example_config.xml). This config was created in version 0.5.4 so may not be compatible with newer versions. 
+
 ### 0MQ
 Provided Python code gives an example of receiving data from Open Ephys. The provided code simply prints out the event received. 
 
@@ -85,3 +88,14 @@ If running a phase based closed loop experiment we recommend implementing the bu
 ![learning signal chain](./resources/learningsignal.PNG)
 
 The first crossing detector here needs to be looking at inputted sham events and must output on a different event channel than the event triggering crossing detector (the second one). 
+
+### Edit hilbert coefficients
+Analyis-signal plugin must be built from source. (https://github.com/tne-lab/phase-calculator) Within "HTransformers.h" file found in the source folder, add your new "band" to the enum Band function. ie
+
+![new band header](./resources/newbandheader.PNG)
+
+
+Then update with your new coefficients in "HTransformers.cpp". ie
+
+
+![new band header](./resources/newbandcpp.PNG)
