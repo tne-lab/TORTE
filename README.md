@@ -22,6 +22,7 @@ For neural data to be received by Open Ephys GUI the user may also need to insta
 - EphysSocket for receiving matrix data over UDP (https://github.com/open-ephys-plugins/EphysSocket)
 - Neuropixels-pxi (https://github.com/open-ephys-plugins/neuropixels-pxi)
 - Neuralynx Plugin (https://github.com/tne-lab/neuralynx-plugin)
+- LSL-inlet (https://github.com/tne-lab/LSL-inlet)
 
 ### 0MQ
 0MQ is used by Open Ephys GUI to broadcast event timings. One of the many supported programming languages needs to be installed (https://zeromq.org/get-started/).
@@ -90,12 +91,4 @@ If running a phase based closed loop experiment we recommend implementing the bu
 The first crossing detector here needs to be looking at inputted sham events and must output on a different event channel than the event triggering crossing detector (the second one). 
 
 ### Edit hilbert coefficients
-Analyis-signal plugin must be built from source. (https://github.com/tne-lab/phase-calculator) Within "HTransformers.h" file found in the source folder, add your new "band" to the enum Band function. ie
-
-![new band header](./resources/newbandheader.PNG)
-
-
-Then update with your new coefficients in "HTransformers.cpp". ie
-
-
-![new band header](./resources/newbandcpp.PNG)
+As mentioned in the publication, alternate Hilbert filters may work better for specific oscillation use cases. See [Hilbert README](./hilbertcoeff.md) to see a step by step guide to creating filters. 
