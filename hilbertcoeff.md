@@ -2,7 +2,7 @@
 Analysis-signal plugin must be built from source. (https://github.com/tne-lab/phase-calculator).
 
 ## Create the filter
-The easiest method to designing a new filter is using Matlabs filterDesigner. But any method to create a Parks-McClellan optimal FIR filter design would work. 
+The easiest method to designing a new filter is using Matlabs filterDesigner. But any method to create a Parks-McClellan optimal FIR filter design would work. See scipy remez function for a Python implementation. https://docs.scipy.org/doc/scipy/reference/generated/scipy.signal.remez.html
 
 Here is the an example filterDesigner for the builtin theta/alpha filter. Note two tradeoffs that need to be attended. 
 - First the filter order. A lower order means less time delay which will result in more accurate results. 
