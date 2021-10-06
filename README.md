@@ -4,7 +4,7 @@ Welcome to the Toolkit for Oscillatory Real-Time Tracking and Estimation repo by
 ## Installation
 
 ### Open Ephys
-Open Ephys GUI is where the real time phase algorithm is built. Installation and usage information can be found at both their website (https://open-ephys.org/gui) and github (https://github.com/open-ephys/plugin-GUI)
+Open Ephys GUI is where the real time analytic signal estimation algorithm is built. Installation and usage information can be found at both their website (https://open-ephys.org/gui) and github (https://github.com/open-ephys/plugin-GUI)
 
 
 ![OE](./resources/oe+logo+match+header-01.png)
