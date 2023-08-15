@@ -1,5 +1,5 @@
 # TORTE
-Welcome to the Toolkit for Oscillatory Real-Time Tracking and Estimation repo by TNE-LAB. Here we provide links to necessary code repository's and basic implementation steps.  See [biorxiv preprint](https://www.biorxiv.org/content/10.1101/2021.06.21.449019v1).
+Welcome to the Toolkit for Oscillatory Real-Time Tracking and Estimation repo by TNE-LAB. Here we provide links to necessary code repository's and basic implementation steps.  See [Journal of Neuroscience Methods](https://doi.org/10.1016/j.jneumeth.2021.109409).
 
 ## Installation
 
